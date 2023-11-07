@@ -3,6 +3,9 @@ import Editor from "./Editor";
 import EditorContainer from "./EditorContainer";
 import PreviewContainer from "./PreviewContainer";
 
+import markdownReducer from "../reducers/markdown_reducer";
+import changeMarkdown from "../actions/editMarkdown";
+
 
 class MainWrapper extends React.Component {
     constructor(props) {
@@ -16,5 +19,7 @@ class MainWrapper extends React.Component {
         </div>
     }
 }
+
+
 
 export default MainWrapper;

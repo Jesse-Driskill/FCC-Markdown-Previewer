@@ -1,9 +1,23 @@
 body {
-    background-color: green;
+    /* background-color: green; */
 }
 
 #app {
     display: flex;
     /* align-items: center; */
+    justify-content: center;
+}
+
+#preview-container {
+    border: solid black 5px;
+    width: 800px;
+    height: 900px;
+
+}
+
+#editor-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
     justify-content: center;
 }
