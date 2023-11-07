@@ -1,0 +1,9 @@
+body {
+    background-color: green;
+}
+
+#app {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
