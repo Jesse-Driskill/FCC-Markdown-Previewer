@@ -13,10 +13,15 @@ const mapStateToProps = (state) => {
 class PreviewContainer extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            expanded: false
+        }
     }
+
+
     render() {
         return (<div id="preview-container">
-            <PreviewToolBox/>
+            <PreviewToolBox hideEditor={this.props.hideEditor}/>
             <Preview markdown={this.props.markdown}/>
             
         </div>)

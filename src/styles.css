@@ -1,5 +1,5 @@
-body {
-    /* background-color: green; */
+code {
+    background-color: white;
 }
 
 #app {
@@ -14,12 +14,13 @@ body {
     height: 900px;
     display: flex;
     flex-direction: column;
-
+    font-family: 'Courier New', Courier, monospace;
 }
+
 
 #editor-container {
     min-width: 800px;
-    min-height: 600px;
+    min-height: 400px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -30,32 +31,101 @@ body {
 
 #editor {
     min-width: 100%;
-    min-height: 560px;
+    /* min-height: 380px; */
     background-color: black;
     color: white;
+    height: auto;
+    font-size: 14px;
 }
 
 #editor-tool-box {
     color: white;
     min-width: 100%;
     min-height: 10px;
+    max-height: 30px;
     font-size: 24px;
     background-color: rgb(104, 104, 104);
     border: 3px solid rgb(104, 104, 104);
+    display: flex;
+    justify-content: space-between;
     /* padding-left: 5%;
     padding-right: 5%; */
 }
 
 #preview-tool-box {
+    border: 3px solid grey;
+    min-height: 30px;
+    max-height: 30px;
     font-size: 24px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
 }
 
-code {
+pre {
     background-color: white;
+}
+
+.tool-box-item {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 body {
     /* background-color: rgb(70, 144, 194);  */
-
+    background-color: rgb(130,170,170);
     
 }
+
+#preview-container {
+    background-color: rgb(147, 177, 192);
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    border-left: 3px solid #224b4b;
+    color: #000000;
+    padding-left: 5px;
+    margin-left: 25px;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    border: 2px solid #224b4b;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    border: 2px solid #224b4b;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tool-box-enlarge {
+    width: 40px;
+    max-height: 100%;
+    background-color: white;
+}
+
+.tool-box-enlarge:hover {
+    cursor: pointer;
+}
+

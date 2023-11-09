@@ -12,14 +12,28 @@ const mapDispatchToProps = (dispatch) => {
 
 class EditorContainer extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.changeView = this.changeView.bind(this);
+        this.state = {
+            expanded: false
+        }
+    }
+
+    changeView() {
+        let e = this.state.expanded;
+        this.setState({expanded: !e});
     }
 
     render() {
-        return (<div id="editor-container">
-            <EditorToolBox/>
-            <Editor changeMarkdown={this.props.changeMarkdown}/>
-        </div>)
+        if (this.props.hidden) {
+            return;
+        } else {
+
+            return (<div id="editor-container">
+                <EditorToolBox changeView={this.changeView}/>
+                <Editor expanded={this.state.expanded} changeMarkdown={this.props.changeMarkdown}/>
+            </div>)
+        }
     }
 }
 

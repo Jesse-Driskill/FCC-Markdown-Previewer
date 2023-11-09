@@ -8,12 +8,13 @@ class Preview extends React.Component {
     }  
     render() {
         return (<div id="preview">
-
-            <Markdown>{this.props.markdown}</Markdown>
+            <Markdown id="preview-markdown" gfm={true} breaks={true}>{this.props.markdown}</Markdown>
         </div>
         )
 
     }
 }
+
+
 
 export default Preview;

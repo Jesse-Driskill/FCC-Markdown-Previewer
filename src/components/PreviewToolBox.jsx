@@ -6,7 +6,10 @@ class PreviewToolBox extends React.Component {
     }
 
     render() {
-        return <div id="preview-tool-box">Preview Tool Box</div>
+        return <div id="preview-tool-box">
+        <div>Preview</div>
+        <img onClick={this.props.hideEditor} className="tool-box-item tool-box-enlarge" id="enlarge-editor" src="../assets/expandIcon.png"></img>
+        </div>
     }
 }
 
