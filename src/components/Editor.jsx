@@ -18,6 +18,7 @@ Or _italic_.
 Or... wait for it... **_both!_**
 And feel free to go crazy ~~crossing stuff out~~.` + `There's also [links](https://www.freecodecamp.org), and
 > Block Quotes!` + `
+
 And if you want to get really crazy, even tables:
 
 Wild Header | Crazy Header | Another Header?
