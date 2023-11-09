@@ -8,7 +8,7 @@ class EditorToolBox extends React.Component {
     render() {
         return (<div id="editor-tool-box">
             <div className="tool-box-item" id="editor-title">Editor</div>
-            <img onClick={this.props.changeView} className="tool-box-item tool-box-enlarge" id="enlarge-editor" src="../assets/expandIcon.png"></img>
+            <img onClick={this.props.changeView} className="tool-box-item tool-box-enlarge" id="enlarge-editor" src="./assets/expandIcon.png"></img>
         </div>)
     }
 }
