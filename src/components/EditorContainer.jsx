@@ -2,6 +2,7 @@ import Editor from "./Editor";
 import React from "react";
 import changeMarkdown from "../actions/editMarkdown";
 import { connect } from "react-redux";
+import EditorToolBox from "./EditorToolBox";
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -16,6 +17,7 @@ class EditorContainer extends React.Component {
 
     render() {
         return (<div id="editor-container">
+            <EditorToolBox/>
             <Editor changeMarkdown={this.props.changeMarkdown}/>
         </div>)
     }

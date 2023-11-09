@@ -1,4 +1,5 @@
 import React from "react";
+import Markdown from 'marked-react';
 
 class Preview extends React.Component {
     constructor(props) {
@@ -6,7 +7,12 @@ class Preview extends React.Component {
         
     }  
     render() {
-        return (<div id="preview">{this.props.markdown}</div>)
+        return (<div id="preview">
+
+            <Markdown>{this.props.markdown}</Markdown>
+        </div>
+        )
+
     }
 }
 

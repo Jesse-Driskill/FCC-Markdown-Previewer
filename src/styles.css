@@ -12,12 +12,50 @@ body {
     border: solid black 5px;
     width: 800px;
     height: 900px;
+    display: flex;
+    flex-direction: column;
 
 }
 
 #editor-container {
+    min-width: 800px;
+    min-height: 600px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#editor {
+    min-width: 100%;
+    min-height: 560px;
+    background-color: black;
+    color: white;
+}
+
+#editor-tool-box {
+    color: white;
+    min-width: 100%;
+    min-height: 10px;
+    font-size: 24px;
+    background-color: rgb(104, 104, 104);
+    border: 3px solid rgb(104, 104, 104);
+    /* padding-left: 5%;
+    padding-right: 5%; */
+}
+
+#preview-tool-box {
+    font-size: 24px;
+}
+
+code {
+    background-color: white;
+}
+
+body {
+    /* background-color: rgb(70, 144, 194);  */
+
+    
 }

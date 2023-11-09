@@ -7,6 +7,8 @@ import {connect} from "react-redux";
 import { Provider } from "react-redux";
 import markdownReducer from "./reducers/markdown_reducer";
 import changeMarkdown from "./actions/editMarkdown";
+import LogoContainer from "./components/LogoContainer";
+
 
 
 
@@ -28,6 +30,7 @@ class App extends React.Component {
         console.log(store.getState(), 'asdhuisda')
         return (<div id="app">
             <div id="test"></div>
+            <LogoContainer/>
             <MainWrapper>
             </MainWrapper>
         </div>)
