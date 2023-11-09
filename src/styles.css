@@ -11,7 +11,8 @@ code {
 #preview-container {
     border: solid black 5px;
     width: 800px;
-    height: 900px;
+    min-height: 750px;
+    height: auto;
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
@@ -128,4 +129,6 @@ th {
 .tool-box-enlarge:hover {
     cursor: pointer;
 }
+
+
 

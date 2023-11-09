@@ -40,7 +40,7 @@ hello | world | world |
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+![Psy](./assets/gangnam-style.webp)
 `;
 
 class Editor extends React.Component {
